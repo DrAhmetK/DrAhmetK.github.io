@@ -10,7 +10,12 @@
 <meta property="og:title" content="Ahmet Kara, PhD">
 <meta property="og:description" content="Engineering leader and hands-on architect. Data and AI platforms, agentic development, and the teams behind them.">
 <meta property="og:url" content="https://drahmetk.github.io/">
+<meta property="og:image" content="https://drahmetk.github.io/ahmet-kara.jpg">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Ahmet Kara">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://drahmetk.github.io/ahmet-kara.jpg">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D3F44'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
@@ -22,6 +27,7 @@
   "jobTitle": "Head of Data & AI Platform",
   "worksFor": { "@type": "Organization", "name": "Transform Gaming" },
   "url": "https://drahmetk.github.io/",
+  "image": "https://drahmetk.github.io/ahmet-kara.jpg",
   "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR" },
   "alumniOf": ["Middle East Technical University", "Bilkent University"],
   "sameAs": [
@@ -100,6 +106,16 @@
 
   /* Hero */
   header.hero { padding: clamp(3.5rem, 10vw, 7.5rem) 0 2.5rem; }
+  .portrait {
+    display: block;
+    width: clamp(6rem, 18vw, 8rem);
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 0 1.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px var(--rule), 0 0 0 4px var(--bg);
+  }
   .name, .lede, h2, h3 { font-family: "Fraunces", Georgia, serif; }
   .name {
     margin: 0;
@@ -222,6 +238,7 @@
 <div class="wrap">
 
   <header class="hero">
+    <img class="portrait" src="ahmet-kara.jpg" width="640" height="640" alt="Ahmet Kara, smiling, by the sea" fetchpriority="high">
     <h1 class="name">Ahmet Kara<span class="phd">, PhD</span></h1>
     <p class="lede">I build data and AI platforms, and the engineering teams behind them.</p>
     <div class="bio">
