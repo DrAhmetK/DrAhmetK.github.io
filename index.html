@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmet Kara</title>
+<meta name="description" content="Ahmet Kara, PhD. Engineering leader and hands-on architect in Ankara, building data and AI platforms and the teams behind them.">
+<link rel="canonical" href="https://drahmetk.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ahmet Kara, PhD">
+<meta property="og:description" content="Engineering leader and hands-on architect. Data and AI platforms, agentic development, and the teams behind them.">
+<meta property="og:url" content="https://drahmetk.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233D3F44'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmet Kara",
+  "honorificSuffix": "PhD",
+  "jobTitle": "Head of Data & AI Platform",
+  "worksFor": { "@type": "Organization", "name": "Transform Gaming" },
+  "url": "https://drahmetk.github.io/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR" },
+  "alumniOf": ["Middle East Technical University", "Bilkent University"],
+  "sameAs": [
+    "https://www.linkedin.com/in/ahmetk",
+    "https://github.com/DrAhmetK",
+    "https://ahmkara.medium.com/",
+    "https://www.researchgate.net/profile/Ahmet-Kara-6",
+    "https://www.instagram.com/ahmkara/",
+    "https://x.com/ahmetkr"
+  ]
+}
+</script>
+<style>
+  @font-face { font-family: "Fraunces"; src: url(fonts/fraunces-normal.woff2) format("woff2"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "Fraunces"; src: url(fonts/fraunces-italic.woff2) format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+  :root {
+    --bg: #f1f1ef;
+    --surface: #ffffff;
+    --ink: #2f3135;
+    --muted: #64666a;
+    --rule: #d3d3cf;
+    --accent: #3d3f44;
+    --accent-soft: #cfcfcb;
+    --hatch: rgba(61, 63, 68, .3);
+    --focus: #3d3f44;
+    --bar: #3d3f44;
+    --on-accent: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #232528;
+      --surface: #2a2c30;
+      --ink: #e4e4e1;
+      --muted: #9c9d9a;
+      --rule: #3b3d42;
+      --accent: #cfcfcb;
+      --accent-soft: #45474c;
+      --hatch: rgba(207, 207, 203, .3);
+      --focus: #cfcfcb;
+      --bar: #cfcfcb;
+      --on-accent: #232528;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #232528;
+    --surface: #2a2c30;
+    --ink: #e4e4e1;
+    --muted: #9c9d9a;
+    --rule: #3b3d42;
+    --accent: #cfcfcb;
+    --accent-soft: #45474c;
+    --hatch: rgba(207, 207, 203, .3);
+    --focus: #cfcfcb;
+    --bar: #cfcfcb;
+    --on-accent: #232528;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-feature-settings: "tnum" 1;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 40px; } }
+
+  /* Hero */
+  header.hero { padding: clamp(3.5rem, 10vw, 7.5rem) 0 2.5rem; }
+  .name, .lede, h2, h3 { font-family: "Fraunces", Georgia, serif; }
+  .name {
+    margin: 0;
+    font-size: clamp(3.1rem, 12vw, 7.25rem);
+    font-weight: 700;
+    line-height: .95;
+    letter-spacing: -.03em;
+    font-variation-settings: "opsz" 144;
+  }
+  .name .phd { font-weight: 400; color: var(--muted); letter-spacing: -.02em; }
+  .lede {
+    margin: 1.5rem 0 0;
+    max-width: 30ch;
+    font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+    line-height: 1.25;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0;
+  }
+  .bio { max-width: 38rem; margin: 1.5rem 0 0; color: var(--muted); }
+  .bio p { margin: 0 0 1em; }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin: 1.75rem 0 0; padding: 0; list-style: none; font-weight: 500; }
+
+  /* Career strip */
+  .career { margin: 1rem 0 0; padding: 2rem 0 0; border-top: 1px solid var(--rule); }
+  .career h2, section h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 0 0 .25rem; }
+  .career .note { margin: 0 0 1.75rem; color: var(--muted); font-size: .95rem; max-width: 38rem; }
+  .chart { position: relative; }
+  .lane { position: relative; height: 3.25rem; margin-bottom: .625rem; }
+  .lane-name { font-size: .8125rem; color: var(--muted); margin: 0 0 .3rem; }
+  .bar {
+    position: absolute;
+    top: 1.35rem;
+    left: calc((var(--s) - 1999) / 28 * 100%);
+    width: calc((var(--e) - var(--s)) / 28 * 100%);
+    height: 1.9rem;
+    border-radius: 999px;
+    background: var(--bar);
+    color: var(--on-accent);
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    padding: 0 .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    transform-origin: left center;
+  }
+  .lane.parallel .bar { background: var(--accent-soft); color: var(--ink); }
+  .lane .bar.split {
+    background:
+      linear-gradient(90deg, transparent calc(var(--pt) * 100%), var(--accent-soft) 0),
+      repeating-linear-gradient(135deg, var(--hatch) 0 4px, transparent 4px 8px);
+    box-shadow: inset 0 0 0 1px var(--accent-soft);
+  }
+  .bar.now { min-width: 6px; padding: 0; border-radius: 999px 0 0 999px; }
+  .now-label { position: absolute; right: 0; top: 0; margin: 0; font-size: .8125rem; font-weight: 500; color: var(--accent); }
+  .bar .short { display: none; }
+  @media (max-width: 640px) {
+    .bar { padding: 0 .3rem; font-size: .75rem; }
+    .bar .long { display: none; }
+    .bar .short { display: inline; }
+  }
+  .axis { position: relative; height: 1.5rem; border-top: 1px solid var(--rule); margin-top: .25rem; }
+  .axis span {
+    position: absolute;
+    left: calc((var(--y) - 1999) / 28 * 100%);
+    top: 0;
+    transform: translateX(-50%);
+    font-size: .75rem;
+    color: var(--muted);
+    padding-top: .35rem;
+  }
+  .axis span::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    height: 5px;
+    border-left: 1px solid var(--rule);
+  }
+  .legend { margin: .75rem 0 0; font-size: .8125rem; color: var(--muted); display: flex; align-items: center; gap: .5rem; }
+  .legend i {
+    display: inline-block; width: 1.5rem; height: .75rem; border-radius: 2px;
+    background: repeating-linear-gradient(135deg, var(--hatch) 0 4px, transparent 4px 8px);
+    box-shadow: inset 0 0 0 1px var(--accent-soft);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .bar { animation: grow .9s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc((var(--s) - 1999) * 45ms + 150ms); }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  }
+
+  /* Sections */
+  main section { padding: 3.25rem 0 0; }
+  .entries { margin: 1.25rem 0 0; padding: 0; list-style: none; }
+  .entry {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .25rem 2rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  @media (min-width: 720px) { .entry { grid-template-columns: 9rem 1fr; } }
+  .entry .when { color: var(--muted); font-size: .95rem; padding-top: .1rem; }
+  .entry h3 { margin: 0; font-size: 1.2rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.35; }
+  .entry .role { margin: 0; color: var(--muted); }
+  .entry p.what { margin: .5rem 0 0; max-width: 40rem; }
+  .entry p.tech { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
+
+  .prose { max-width: 38rem; }
+  .prose p { margin: .5rem 0 0; }
+
+  footer { margin-top: 4.5rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .95rem; }
+  footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; }
+  footer p { margin: 0; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1 class="name">Ahmet Kara<span class="phd">, PhD</span></h1>
+    <p class="lede">I build data and AI platforms, and the engineering teams behind them.</p>
+    <div class="bio">
+      <p>I'm an engineering leader and hands-on software architect based in Ankara, Türkiye. For nine years I was Head of Engineering at Mobile Action, where the team grew from 4 to 30 engineers and Search Ads became a standalone platform managing over $1B in annual Apple Ads spend. Before that I spent 13 years in defense R&amp;D at TÜBİTAK, and earned a PhD in computer engineering at METU.</p>
+      <p>Since November 2026 I'm Head of Data &amp; AI Platform at Transform Gaming, building the data, backend and AI systems behind a group of mobile games. It's hands-on work, done with agentic development workflows. I'm always glad to compare notes on agentic development, AI adoption in engineering teams, and data platforms.</p>
+    </div>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/ahmetk" rel="me">LinkedIn</a></li>
+      <li><a href="https://github.com/DrAhmetK" rel="me">GitHub</a></li>
+      <li><a href="https://ahmkara.medium.com/" rel="me">Medium</a></li>
+      <li><a href="https://www.researchgate.net/profile/Ahmet-Kara-6" rel="me">ResearchGate</a></li>
+    </ul>
+  </header>
+
+  <figure class="career" aria-labelledby="career-title">
+    <h2 id="career-title">Two decades, often two things at once</h2>
+    <p class="note">The main line is where I worked full-time. Underneath it is what ran alongside: graduate degrees during my TÜBİTAK years, and Unico Studio during my Mobile Action years.</p>
+    <div class="chart">
+      <div class="lane">
+        <p class="lane-name">Main line</p>
+        <div class="bar" style="--s:1999.7;--e:2003.5"><span class="long">Bilkent BSc</span><span class="short">BSc</span><span class="sr-only">, 1999 to 2003</span></div>
+        <div class="bar" style="--s:2003.7;--e:2016.6"><span class="long">TÜBİTAK BİLGEM İLTAREN</span><span class="short">TÜBİTAK</span><span class="sr-only">, 2003 to 2016</span></div>
+        <div class="bar" style="--s:2017.0;--e:2026.45"><span class="long">Mobile Action</span><span class="short">Mobile Action</span><span class="sr-only">, 2017 to 2026</span></div>
+        <div class="bar now" style="--s:2026.84;--e:2027"><span class="sr-only">Transform Gaming, since November 2026</span></div>
+        <p class="now-label" aria-hidden="true">Now: Transform Gaming</p>
+      </div>
+      <div class="lane parallel">
+        <p class="lane-name">Alongside</p>
+        <div class="bar" style="--s:2003.7;--e:2006.6"><span class="long">Bilkent MSc</span><span class="short">MSc</span><span class="sr-only">, 2003 to 2006</span></div>
+        <div class="bar" style="--s:2006.7;--e:2014.5"><span class="long">METU PhD</span><span class="short">PhD</span><span class="sr-only">, 2006 to 2014</span></div>
+        <div class="bar split" style="--s:2021.6;--e:2026.85;--pt:.91"><span class="long">Unico Studio</span><span class="short">Unico</span><span class="sr-only">, 2021 to 2026, part-time until mid-2026</span></div>
+      </div>
+      <div class="axis" aria-hidden="true">
+        <span style="--y:2000">2000</span>
+        <span style="--y:2005">2005</span>
+        <span style="--y:2010">2010</span>
+        <span style="--y:2015">2015</span>
+        <span style="--y:2020">2020</span>
+        <span style="--y:2025">2025</span>
+      </div>
+    </div>
+    <p class="legend"><i aria-hidden="true"></i> Part-time</p>
+  </figure>
+
+  <main>
+    <section aria-labelledby="work-title">
+      <h2 id="work-title">Work</h2>
+      <ul class="entries">
+        <li class="entry">
+          <div class="when">2026 – now</div>
+          <div>
+            <h3>Transform Gaming</h3>
+            <p class="role">Head of Data &amp; AI Platform</p>
+            <p class="what">A London-based group of mobile games. I design, build and run the group's data and AI platform: business intelligence and reporting, the backend services and cloud infrastructure behind the games, and agent-based tools that automate day-to-day operations.</p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="when">2021 – 2026</div>
+          <div>
+            <h3>Unico Studio</h3>
+            <p class="role">Technical consultant and full-stack engineer</p>
+            <p class="what">Mobile games with more than 1.6 billion downloads. I built a BI system for gaming analytics with real-time insights and AI-driven suggestions, and a SaaS platform for app-publisher registration and reporting, working with AI-native, agentic workflows throughout. Part-time until 2026, then full-time.</p>
+            <p class="tech">Python, FastAPI, Vue.js, PostgreSQL, AWS, Claude Code</p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="when">2017 – 2026</div>
+          <div>
+            <h3>Mobile Action</h3>
+            <p class="role">Head of Engineering</p>
+            <p class="what">B2B SaaS for mobile app companies, with customers such as Google, Meta and DoorDash. I grew engineering from 4 to 30 people and built the hiring and performance processes the company later adopted. I led Search Ads from an embedded feature to a standalone platform managing over $1B in annual Apple Ads spend. I also led the move to ClickHouse, SOC 2 Type II and GDPR compliance, and AI adoption, including a shared agentic development framework that indexes knowledge across microservices.</p>
+            <p class="tech">Java, Spring Boot, PostgreSQL, ClickHouse, AWS, Vue.js</p>
+          </div>
+        </li>
+        <li class="entry">
+          <div class="when">2003 – 2016</div>
+          <div>
+            <h3>TÜBİTAK BİLGEM İLTAREN</h3>
+            <p class="role">Software engineer to lead software engineer</p>
+            <p class="what">Defense R&amp;D on electronic-warfare and simulation systems. I led teams of four to six engineers and built high-performance systems in C++ and C# that went into national defense projects.</p>
+            <p class="tech">C++, C#, WPF, MongoDB, SQL Server</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="writing-title">
+      <h2 id="writing-title">Writing</h2>
+      <div class="prose">
+        <p>I post regularly on <a href="https://www.linkedin.com/in/ahmetk">LinkedIn</a> about engineering leadership, AI and agentic development. Follow along there; it's also the easiest way to reach me. Older posts are on <a href="https://ahmkara.medium.com/">Medium</a>.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="prose">
+        <p>My earlier academic work, from my PhD on simulation modelling, is on <a href="https://www.researchgate.net/profile/Ahmet-Kara-6">ResearchGate</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ahmet Kara, Ankara, Türkiye</p>
+    <p>Personal: <a href="https://www.instagram.com/ahmkara/" rel="me">Instagram</a>, <a href="https://x.com/ahmetkr" rel="me">X</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
