@@ -106,15 +106,21 @@
 
   /* Hero */
   header.hero { padding: clamp(3.5rem, 10vw, 7.5rem) 0 2.5rem; }
+  .hero-top { display: flex; flex-direction: column; align-items: flex-start; gap: 1.75rem; }
   .portrait {
     display: block;
+    flex: none;
     width: clamp(6rem, 18vw, 8rem);
     height: auto;
     aspect-ratio: 1;
-    margin: 0 0 1.75rem;
+    margin: 0;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 0 1px var(--rule), 0 0 0 4px var(--bg);
+  }
+  @media (min-width: 720px) {
+    .hero-top { flex-direction: row; align-items: center; justify-content: space-between; gap: 2.5rem; }
+    .portrait { width: 10rem; order: 1; }
   }
   .name, .lede, h2, h3 { font-family: "Fraunces", Georgia, serif; }
   .name {
@@ -238,9 +244,13 @@
 <div class="wrap">
 
   <header class="hero">
-    <img class="portrait" src="ahmet-kara.jpg" width="640" height="640" alt="Ahmet Kara, smiling, by the sea" fetchpriority="high">
-    <h1 class="name">Ahmet Kara<span class="phd">, PhD</span></h1>
-    <p class="lede">I build data and AI platforms, and the engineering teams behind them.</p>
+    <div class="hero-top">
+      <img class="portrait" src="ahmet-kara.jpg" width="640" height="640" alt="Ahmet Kara, smiling, by the sea" fetchpriority="high">
+      <div>
+        <h1 class="name">Ahmet Kara<span class="phd">, PhD</span></h1>
+        <p class="lede">I build data and AI platforms, and the engineering teams behind them.</p>
+      </div>
+    </div>
     <div class="bio">
       <p>I'm an engineering leader and hands-on software architect based in Ankara, Türkiye. For nine years I was Head of Engineering at Mobile Action, where the team grew from 4 to 30 engineers and Search Ads became a standalone platform managing over $1B in annual Apple Ads spend. Before that I spent 13 years in defense R&amp;D at TÜBİTAK, and earned a PhD in computer engineering at METU.</p>
       <p>Since November 2026 I'm Head of Data &amp; AI Platform at Transform Gaming, building the data, backend and AI systems behind a group of mobile games. It's hands-on work, done with agentic development workflows. I'm always glad to compare notes on agentic development, AI adoption in engineering teams, and data platforms.</p>
