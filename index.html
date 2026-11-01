@@ -95,15 +95,15 @@
   a:hover { color: var(--accent); }
   :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 
-  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 16px; }
-  @media (min-width: 720px) { .wrap { padding: 0 40px; } }
+  .wrap { max-width: calc(44rem + 32px); margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { max-width: calc(44rem + 80px); padding: 0 40px; } }
 
   /* Hero */
   header.hero { padding: clamp(3.5rem, 10vw, 7.5rem) 0 2.5rem; }
   .name, .lede, h2, h3 { font-family: "Fraunces", Georgia, serif; }
   .name {
     margin: 0;
-    font-size: clamp(3.1rem, 12vw, 7.25rem);
+    font-size: clamp(3rem, 11vw, 5.5rem);
     font-weight: 700;
     line-height: .95;
     letter-spacing: -.03em;
@@ -112,21 +112,20 @@
   .name .phd { font-weight: 400; color: var(--muted); letter-spacing: -.02em; }
   .lede {
     margin: 1.5rem 0 0;
-    max-width: 30ch;
     font-size: clamp(1.35rem, 3.2vw, 1.85rem);
     line-height: 1.25;
     font-weight: 500;
     font-style: italic;
     letter-spacing: 0;
   }
-  .bio { max-width: 38rem; margin: 1.5rem 0 0; color: var(--muted); }
+  .bio { margin: 1.5rem 0 0; color: var(--muted); }
   .bio p { margin: 0 0 1em; }
   .links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin: 1.75rem 0 0; padding: 0; list-style: none; font-weight: 500; }
 
   /* Career strip */
   .career { margin: 1rem 0 0; padding: 2rem 0 0; border-top: 1px solid var(--rule); }
   .career h2, section h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 0 0 .25rem; }
-  .career .note { margin: 0 0 1.75rem; color: var(--muted); font-size: .95rem; max-width: 38rem; }
+  .career .note { margin: 0 0 1.75rem; color: var(--muted); font-size: .95rem; }
   .chart { position: relative; }
   .lane { position: relative; height: 3.25rem; margin-bottom: .625rem; }
   .lane-name { font-size: .8125rem; color: var(--muted); margin: 0 0 .3rem; }
@@ -203,14 +202,13 @@
     padding: 1.25rem 0;
     border-top: 1px solid var(--rule);
   }
-  @media (min-width: 720px) { .entry { grid-template-columns: 9rem 1fr; } }
+  @media (min-width: 720px) { .entry { grid-template-columns: 7.5rem 1fr; } }
   .entry .when { color: var(--muted); font-size: .95rem; padding-top: .1rem; }
   .entry h3 { margin: 0; font-size: 1.2rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.35; }
   .entry .role { margin: 0; color: var(--muted); }
-  .entry p.what { margin: .5rem 0 0; max-width: 40rem; }
+  .entry p.what { margin: .5rem 0 0; }
   .entry p.tech { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
 
-  .prose { max-width: 38rem; }
   .prose p { margin: .5rem 0 0; }
 
   footer { margin-top: 4.5rem; padding: 2rem 0 3rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .95rem; }
@@ -252,7 +250,7 @@
       </div>
       <div class="lane parallel">
         <p class="lane-name">Alongside</p>
-        <div class="bar" style="--s:2003.7;--e:2006.6"><span class="long">Bilkent MSc</span><span class="short">MSc</span><span class="sr-only">, 2003 to 2006</span></div>
+        <div class="bar" style="--s:2003.7;--e:2006.6"><span class="long">MSc</span><span class="short">MSc</span><span class="sr-only">, 2003 to 2006</span></div>
         <div class="bar" style="--s:2006.7;--e:2014.5"><span class="long">METU PhD</span><span class="short">PhD</span><span class="sr-only">, 2006 to 2014</span></div>
         <div class="bar split" style="--s:2021.6;--e:2026.85;--pt:.91"><span class="long">Unico Studio</span><span class="short">Unico</span><span class="sr-only">, 2021 to 2026, part-time until mid-2026</span></div>
       </div>
