@@ -148,9 +148,8 @@
   .links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin: 1.75rem 0 0; padding: 0; list-style: none; font-weight: 500; }
 
   /* Career strip */
-  .career { margin: 1rem 0 0; padding: 2rem 0 0; border-top: 1px solid var(--rule); }
-  .career h2, section h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 0 0 .25rem; }
-  .career .note { margin: 0 0 1.75rem; color: var(--muted); font-size: .95rem; }
+  .career { margin: 2.5rem 0 0; }
+  section h2 { font-size: 1.25rem; letter-spacing: -.01em; margin: 0 0 .25rem; }
   .chart { position: relative; }
   .lane { position: relative; height: 3.25rem; margin-bottom: .625rem; }
   .lane-name { font-size: .8125rem; color: var(--muted); margin: 0 0 .3rem; }
@@ -256,8 +255,8 @@
       </div>
     </div>
     <div class="bio">
-      <p>I'm an engineering leader and hands-on software architect based in Ankara, Türkiye. For nine years I was Head of Engineering at Mobile Action, where the team grew from 4 to 30 engineers and Search Ads became a standalone platform managing over $1B in annual Apple Ads spend. Before that I spent 13 years in defense R&amp;D at TÜBİTAK, and earned a PhD in computer engineering at METU.</p>
-      <p>Since November 2026 I'm Head of Data &amp; AI Platform at Transform Gaming, building the data, backend and AI systems behind a group of mobile games. I'm always glad to compare notes on agentic development, AI adoption in engineering teams, and data platforms.</p>
+      <p>I'm an engineering leader and hands-on software architect based in Ankara, Türkiye. I'm Head of Data &amp; AI Platform at Transform Gaming, building the data, backend and AI systems behind a group of mobile games.</p>
+      <p>Before that, for nine years I was Head of Engineering at Mobile Action, where the team grew from 4 to 30 engineers and Search Ads became a standalone platform managing over $1B in annual Apple Ads spend. Earlier I spent 13 years in defense R&amp;D at TÜBİTAK, and earned a PhD at METU. I'm always glad to compare notes on agentic development, AI adoption in engineering teams, and data platforms.</p>
     </div>
     <ul class="links">
       <li><a href="https://www.linkedin.com/in/ahmetk" rel="me">LinkedIn</a></li>
@@ -267,37 +266,21 @@
     </ul>
   </header>
 
-  <figure class="career" aria-labelledby="career-title">
-    <h2 id="career-title">Two decades, often two things at once</h2>
-    <p class="note">The main line is where I worked full-time. Underneath it is what ran alongside: graduate degrees during my TÜBİTAK years, and Unico Studio during my Mobile Action years.</p>
-    <div class="chart">
-      <div class="lane">
-        <p class="lane-name">Main line</p>
-        <div class="bar" style="--s:1999.7;--e:2003.5"><span class="long">Bilkent BSc</span><span class="short">BSc</span><span class="sr-only">, 1999 to 2003</span></div>
-        <div class="bar" style="--s:2003.7;--e:2016.6"><span class="long">TÜBİTAK BİLGEM İLTAREN</span><span class="short">TÜBİTAK</span><span class="sr-only">, 2003 to 2016</span></div>
-        <div class="bar" style="--s:2017.0;--e:2026.45"><span class="long">Mobile Action</span><span class="short">Mobile Action</span><span class="sr-only">, 2017 to 2026</span></div>
-        <div class="bar now" style="--s:2026.84;--e:2027"><span class="sr-only">Transform Gaming, since November 2026</span></div>
-        <p class="now-label" aria-hidden="true">Now: Transform Gaming</p>
-      </div>
-      <div class="lane parallel">
-        <p class="lane-name">Alongside</p>
-        <div class="bar" style="--s:2003.7;--e:2006.6"><span class="long">MSc</span><span class="short">MSc</span><span class="sr-only">, 2003 to 2006</span></div>
-        <div class="bar" style="--s:2006.7;--e:2014.5"><span class="long">METU PhD</span><span class="short">PhD</span><span class="sr-only">, 2006 to 2014</span></div>
-        <div class="bar split" style="--s:2021.6;--e:2026.85;--pt:.91"><span class="long">Unico Studio</span><span class="short">Unico</span><span class="sr-only">, 2021 to 2026, part-time until mid-2026</span></div>
-      </div>
-      <div class="axis" aria-hidden="true">
-        <span style="--y:2000">2000</span>
-        <span style="--y:2005">2005</span>
-        <span style="--y:2010">2010</span>
-        <span style="--y:2015">2015</span>
-        <span style="--y:2020">2020</span>
-        <span style="--y:2025">2025</span>
-      </div>
-    </div>
-    <p class="legend"><i aria-hidden="true"></i> Part-time</p>
-  </figure>
-
   <main>
+    <section aria-labelledby="writing-title">
+      <h2 id="writing-title">Writing</h2>
+      <div class="prose">
+        <p>I post regularly on <a href="https://www.linkedin.com/in/ahmetk">LinkedIn</a> about engineering leadership, AI and agentic development. Older posts are on <a href="https://ahmkara.medium.com/">Medium</a>.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <div class="prose">
+        <p>The best way to reach me is a direct message on <a href="https://www.linkedin.com/in/ahmetk">LinkedIn</a>. My messages are open to everyone, so you don't need to be connected first.</p>
+      </div>
+    </section>
+
     <section aria-labelledby="work-title">
       <h2 id="work-title">Work</h2>
       <ul class="entries">
@@ -339,6 +322,34 @@
       </ul>
     </section>
 
+    <figure class="career" aria-label="Career timeline">
+      <div class="chart">
+        <div class="lane">
+          <p class="lane-name">Main line</p>
+          <div class="bar" style="--s:1999.7;--e:2003.5"><span class="long">Bilkent BSc</span><span class="short">BSc</span><span class="sr-only">, 1999 to 2003</span></div>
+          <div class="bar" style="--s:2003.7;--e:2016.6"><span class="long">TÜBİTAK BİLGEM İLTAREN</span><span class="short">TÜBİTAK</span><span class="sr-only">, 2003 to 2016</span></div>
+          <div class="bar" style="--s:2017.0;--e:2026.45"><span class="long">Mobile Action</span><span class="short">Mobile Action</span><span class="sr-only">, 2017 to 2026</span></div>
+          <div class="bar now" style="--s:2026.84;--e:2027"><span class="sr-only">Transform Gaming, since November 2026</span></div>
+          <p class="now-label" aria-hidden="true">Now: Transform Gaming</p>
+        </div>
+        <div class="lane parallel">
+          <p class="lane-name">Alongside</p>
+          <div class="bar" style="--s:2003.7;--e:2006.6"><span class="long">MSc</span><span class="short">MSc</span><span class="sr-only">, 2003 to 2006</span></div>
+          <div class="bar" style="--s:2006.7;--e:2014.5"><span class="long">METU PhD</span><span class="short">PhD</span><span class="sr-only">, 2006 to 2014</span></div>
+          <div class="bar split" style="--s:2021.6;--e:2026.85;--pt:.91"><span class="long">Unico Studio</span><span class="short">Unico</span><span class="sr-only">, 2021 to 2026, part-time until mid-2026</span></div>
+        </div>
+        <div class="axis" aria-hidden="true">
+          <span style="--y:2000">2000</span>
+          <span style="--y:2005">2005</span>
+          <span style="--y:2010">2010</span>
+          <span style="--y:2015">2015</span>
+          <span style="--y:2020">2020</span>
+          <span style="--y:2025">2025</span>
+        </div>
+      </div>
+      <p class="legend"><i aria-hidden="true"></i> Part-time</p>
+    </figure>
+
     <section aria-labelledby="education-title">
       <h2 id="education-title">Education</h2>
       <ul class="entries">
@@ -347,7 +358,6 @@
           <div>
             <h3><a href="https://www.metu.edu.tr/">Middle East Technical University</a></h3>
             <p class="role">PhD in Computer Engineering</p>
-            <p class="what">Completed alongside full-time work at TÜBİTAK. Thesis on simulation modelling.</p>
           </div>
         </li>
         <li class="entry">
@@ -367,24 +377,10 @@
       </ul>
     </section>
 
-    <section aria-labelledby="writing-title">
-      <h2 id="writing-title">Writing</h2>
-      <div class="prose">
-        <p>I post regularly on <a href="https://www.linkedin.com/in/ahmetk">LinkedIn</a> about engineering leadership, AI and agentic development. Older posts are on <a href="https://ahmkara.medium.com/">Medium</a>.</p>
-      </div>
-    </section>
-
     <section aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
       <div class="prose">
         <p>My earlier academic work, from my PhD on simulation modelling, is on <a href="https://www.researchgate.net/profile/Ahmet-Kara-6">ResearchGate</a>.</p>
-      </div>
-    </section>
-
-    <section aria-labelledby="contact-title">
-      <h2 id="contact-title">Get in touch</h2>
-      <div class="prose">
-        <p>The best way to reach me is a direct message on <a href="https://www.linkedin.com/in/ahmetk">LinkedIn</a>. My messages are open to everyone, so you don't need to be connected first.</p>
       </div>
     </section>
   </main>
